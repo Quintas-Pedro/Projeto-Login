@@ -5,18 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projecto Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                <img src="" alt="">
+            
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para aceder a sua conta.</p>
-                <form action="" method="post">
-                    
+                <form action="" method="post" id="form">
+                    <div id="inputEmail" class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail"   class="login" autocomplete="email" required placeholder="Digite o seu email">
+                    </div>
+
+                    <div id="inputSenha" class="campo">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" class="login"   autocomplete="current-password" required placeholder="Digite a sua palavra-passe">
+                    </div>
+                    <input type="submit" value="Entrar" id="btnEntrar">
+                    <a href="esqueci.html">Esqueci a Senha</a>
                 </form>
             </div>
         </section>

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/* 
+Tablets: 768px à 992px
+PC: 992px à 1200px
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    body{
+        background-image: linear-gradient(to bottom, rgba(66, 198, 216, 1), rgba(0, 17, 92, 1));
+    }
+
+    section#login{
+        width: 80vw;
+        height: 350px;
+    }
+
+    section#login>div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login>div#formulario{
+        float: right;
+        width: 70%;
+    }
+    div#inputSenha{
+        margin-top: 20px ;
+    }
+
+    #form{
+        margin-top: 40px;
+    }
+
+   #btnEntrar{
+    margin-top: 20px;
+   }
+}
+
+@media screen and (min-width:992px){
+     body{
+        background-image: linear-gradient(to bottom, rgba(66, 198, 216, 1), rgba(0, 17, 92, 1));
+    }
+    
+    section#login{
+        width: 950px;
+        height: 400px;
+    }
+
+    div#imagem{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#formulario{
+        float: right;
+        width: 50%;
+    }
+
+    #form{
+        margin-top: 50px;
+    }
+
+    div#inputSenha{
+        margin-top: 20px ;
+    }
+
+    #form{
+        margin-top: 40px;
+    }
+
+   #btnEntrar{
+    margin-top: 40px;
+   }
+
+    div#formulario>h1{
+        font-size: 2em;
+    }
+
+    div#formulario>p{
+        font-size: 1em;
+    }
+}
